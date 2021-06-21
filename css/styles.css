@@ -60,6 +60,7 @@ body {
 
 .main-content{
     background: url(../images/bg.png) repeat;
+    position: relative;
 }
 
 #gradient{
@@ -116,15 +117,6 @@ body {
     animation-iteration-count: infinite; */
 
 }
-/* .page1{
-    width: 100%;
-}
-.page2{
-    width: 170%;
-}
-.page3{
-    width: 230%;
-} */
 /* header-css-start */
 header{
     padding: 67px 0 0;
@@ -613,7 +605,7 @@ nav ul li a:hover::after{
 }
 .interiors-right .int-gold{
     max-width: 489px;
-    min-height: 574px;
+    /* min-height: 574px; */
     background: url(../images/gold.png) no-repeat;
     width: 100%;
     background-size: cover;
@@ -698,10 +690,99 @@ nav ul li a:hover::after{
     font-size: 22px;
     font-weight: 900;
     color: #ffffff;
+    text-decoration: none;
 }
-.nos-project  .nox-inner span,
+.nos-project  .nox-inner a,
 .nos-project  .nox-inner h3 {
     position: relative;
     z-index: 2;
 }
  /* nos-project end */
+
+
+
+
+
+
+
+ /* ----------------------------------------page  our works-------------------------------------- */
+.our-works .banner-wrap h3{
+    font-size: 69px;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+}
+.works-inner{
+    padding: 100px 0 0 0 ;
+    position: relative;
+    z-index: 2;
+    background: url(../images/bg.png) repeat;
+}
+.works-inner .contanier{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.works-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.works-cards .card{
+    width: 46%;
+    flex: 0 0 45%;
+    transform: translate(77px, -92px);
+    margin-bottom: 180px;
+    text-decoration: none;
+}
+.works-cards .card:nth-child(2n+2){
+    transform: translate(110px, 100px);
+}
+.card-img{
+    max-height: 620px;
+    overflow: hidden;
+    transform:scale(0.9)
+}
+.works-cards .card img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.6);
+}
+.works-cards .card  .card-body{
+    padding: 34px 0 25px 0;
+}
+
+.works-cards .card  .card-body h4{
+    font-size: 38px;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    transform: translateX(-200px);
+    transition: 0.2S all ease-in-out;
+}
+.card-heading,
+.card-text{
+    overflow: hidden;
+}
+.works-cards .card  .card-body span{
+    font-size: 26px;
+    color: #000;
+    font-weight: 700; 
+}
+
+.our-works .nos-project {
+    top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.our-works .project-title{
+    z-index: 7;
+    top: 100vh;
+    left: 240px;
+}
+.our-works .project-title span{
+    transform: translate(0px, 0px) !important;
+}
